@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin · Urban blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../assets/brand/logo.svg">
+    <link href="../css/ideas.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <div class="card bg-light m-3">
+            <form class="m-3">
+                <strong>Image</strong>
+                <input class="form-control form-control-sm" id="image" type="file">
+                <strong>Title</strong>
+                <textarea class="form-control" id="title"></textarea>
+                <strong>Preview</strong>
+                <textarea class="form-control" id="short"></textarea>
+                <strong>Article</strong>
+                <textarea class="form-control" id="article"></textarea>
+            </form>
+            <button class="w-25 mb-3 ml-3 btn btn-sm btn-dark" id = "add_btn">Save article</button>
+        </div>
+        <div class = "articles">
+        </div>
+    </main>
+    <script src = "../js/controller/admin_page_controller.js" type="module"></script>
+    <script src = "../js/view/admin_page_view.js" type="module"></script>
+</body>
+
+</html>
